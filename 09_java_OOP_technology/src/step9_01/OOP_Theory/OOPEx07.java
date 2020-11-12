@@ -1,5 +1,13 @@
 // 2020-11-11 수 3교시 강의 - interface
+// 2020-11-12 목 3교시 강의 - interface 심화 
 package step9_01.OOP_Theory;
+
+/*
+ *  # 인터페이스 (interface)
+ *    - 인터페이스는 추상클래스보다 더 추상화된 클래스
+ *    - 실제 구현된 것이 전혀 없는 기본 설계도
+ *    - 미리 정해진 규칙에 맞게 구현하도록 '표준'을 제시하는데 사용 
+ */
 
 abstract class AA{			// 추상클래스
 	abstract void test1();	// 추상메서드
