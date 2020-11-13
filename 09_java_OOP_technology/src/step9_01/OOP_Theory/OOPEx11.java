@@ -1,5 +1,6 @@
 // 2020-11-13 금 1교시 강의 - HashMap 
 package step9_01.OOP_Theory;
+import java.util.HashMap;
 /*
  *  # HashMap
  *    - 컬렉션 프레임워크. json과 비슷하다!
@@ -7,7 +8,12 @@ package step9_01.OOP_Theory;
  *    - 순서대로 저장되는 구조가 아니다. key로 기억함. data는 수동적.
  */
 
-import java.util.HashMap;
+class Person {
+	String name;
+	int age;
+	
+	void method() {}
+}
 
 public class OOPEx11 {
 
@@ -54,5 +60,11 @@ public class OOPEx11 {
 		System.out.println(hmap);
 		hmap.clear();
 		System.out.println(hmap);
+		System.out.println("======================================");
+		
+		HashMap<String, Person> pmap = new HashMap<String, Person>();
+		pmap.put("person1", new Person());
+		pmap.get("person1").name = "홍길동";
+		pmap.get("person1").method();
 	}
 }
