@@ -1,5 +1,6 @@
 // 2020-11-16 월 3교시 17:24-17:42 구조파악
 // 다음: rank 계산하는거 이해하고 작성시작하기
+// 2020-11-17 화 2회 완성
 package step9_02.score;
 
 public class ScoreTest {

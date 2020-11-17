@@ -13,6 +13,8 @@ public class ScoreVO {
 	private int rank = 1;		// 석차, 석차를 계산할 기억 장소의 초기치는 무조건 1로 한다.
 	
 	public ScoreVO() { }
+	// ***** 왜있나? 이거없으면 그냥 생성자 못쓰는거아닌가 근데 필요없는거아닌가...? 
+	// -> 안만들면 못씀 ㅇㅇ 그래서 그냥 관념적으로 만들어두는편. 만약 쓴다면 기본생성자에서도 count++해줄것임...
 	public ScoreVO(String name, int java, int jsp, int spring) {
 		no = ++count;
 		this.name = name;

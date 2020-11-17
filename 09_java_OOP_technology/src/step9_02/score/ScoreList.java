@@ -39,7 +39,8 @@ public class ScoreList {
 		return str;
 	}
 	
-//	ArrayList에 인수로 넘겨받은 성적을 추가하는 메소드
+	// ArrayList에 인수로 넘겨받은 성적을 추가하는 메소드
+	// 왜 그냥 ArrayList의 add()를 이용하지 않나 -> 쓰려면 메인에서 scoreList.getScoreList().add(VO vo)해야함.
 	public void addScore(ScoreVO vo) {
 		scoreList.add(vo);
 	}
