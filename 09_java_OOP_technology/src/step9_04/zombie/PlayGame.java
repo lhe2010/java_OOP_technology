@@ -86,6 +86,7 @@ public class PlayGame {
 						break;
 					}
 				}
+				
 				if (hero.getPlayerPosition() == 10) {
 					System.out.println("\n[msg]게임에서 승리했습니다. 종료합니다.");
 					break;

@@ -1,12 +1,7 @@
-// 2020-11-17 화 3교시 배포, 구성파악
-package step9_04.zombie;
+package step9_04.zombie2;
 
 public class Main {
-
 	public static void main(String[] args) {
-		
 		new PlayGame().play();
-		
 	}
-
 }
