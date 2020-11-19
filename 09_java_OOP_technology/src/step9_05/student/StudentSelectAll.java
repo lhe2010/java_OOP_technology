@@ -2,6 +2,7 @@ package step9_05.student;
 
 import java.util.Map;
 
+//Service : 데이터 변경 로직 
 public class StudentSelectAll {
 	
 	private StudentDAO studentDAO;

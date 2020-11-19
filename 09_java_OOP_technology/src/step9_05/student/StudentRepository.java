@@ -2,6 +2,7 @@ package step9_05.student;
 
 import java.util.HashMap;
 
+// 웹에서 DB부분을 담당 (데이터가 저장되는 장소)
 public class StudentRepository {
 
 	private static HashMap<String, StudentVO> stDB = new HashMap<String , StudentVO>();

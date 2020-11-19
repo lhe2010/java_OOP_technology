@@ -1,5 +1,6 @@
 package step9_05.student;
 
+// Value Object : 데이터의 폼, 형식, 모델 (MVC에서의 모델)
 public class StudentVO {
 	
 	private String id;

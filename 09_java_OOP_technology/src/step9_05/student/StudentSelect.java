@@ -1,5 +1,6 @@
 package step9_05.student;
 
+// Service : 데이터 변경 로직 
 public class StudentSelect {
 	
 	private StudentDAO studentDAO;

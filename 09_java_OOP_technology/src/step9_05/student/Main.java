@@ -1,4 +1,5 @@
-// 2020-11-18 수 구조 설명 
+// 2020-11-18 수 구조 설명, 실습 (**main에서 구현하는게 아닌게 포인트인데 main에서 구현함. 목요일에 수정할것!)
+// 2020-11-19 목 1교시 15:20-15:50 삭제/수정 기능 구현
 package step9_05.student;
 import java.util.Scanner;
 
@@ -37,35 +38,25 @@ public class Main {
 				StudentSelect stSelect = controller.getSelect();
 				StudentVO st = stSelect.select(id);
 				
-				if(st != null) { 
-					int num; 
-					String name;
-					while(true) {
-						System.out.print("바꿀 번호를 입력하세요 : ");
-						num = scan.nextInt();
-						
-						System.out.print("바꿀 이름을 입력하세요 : ");
-						name = scan.next();
-						
-//						if(name != null) 
-							break;
-											
-					}
-					controller.getStDAO().getStudentDB().get(id).setName(name);
-					controller.getStDAO().getStudentDB().get(id).setNum(num);
+				if(st != null) { // 있으면 
+					System.out.print("바꿀 번호를 입력하세요 : ");
+					int num = scan.nextInt();
+					
+					System.out.print("바꿀 이름을 입력하세요 : ");
+					String name = scan.next();
+					
+					StudentUpdate stUpdate = controller.getUpdate();
+					stUpdate.update(new StudentVO(id, num, name));
 				}
 			} else if (selectMenu == 3) {
-				// 수정 : 아이디를 입력받아서 해당되는 아이디가 있으면 삭제
+				// 삭제 : 아이디를 입력받아서 해당되는 아이디가 있으면 삭제
 				System.out.print("아이디를 입력하세요 : ");
 				String id = scan.next();
 				
-				StudentSelect stSelect = controller.getSelect();
-				StudentVO st = stSelect.select(id);
-				
-				if(st != null) 
-					controller.getStDAO().getStudentDB().remove(id);
+				StudentDelete stDelete = controller.getDelete();
+				stDelete.delete(id);
 
-				} else if (selectMenu == 4) {
+			} else if (selectMenu == 4) {
 				
 				System.out.print("아이디를 입력하세요 : ");
 				String id = scan.next();
